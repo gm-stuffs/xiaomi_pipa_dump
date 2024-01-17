@@ -1,0 +1,58 @@
+on post-fs-data
+	mkdir /data/local/log 0771 system system
+	mkdir /data/local/bootlog 0777 system system
+	mkdir /data/vendor/tz_log 0771 root root
+	chown system system /dev/mtd0
+
+service logcatkernel /system/bin/sh /system/bin/logcatkernel.sh
+        class main
+        user system
+        group system
+        disabled
+        seclabel u:r:kernellog:s0
+       	writepid  /dev/cpuset/background/tasks
+
+service bootlog /system/bin/sh /system/bin/bootlog.sh
+        class main
+        user system
+        group system
+        disabled
+        oneshot
+        seclabel u:r:kernellog:s0
+       	writepid  /dev/cpuset/background/tasks
+
+service logcatlog /system/bin/sh /system/bin/logcatlog.sh
+	class main
+	user system
+	group system
+	disabled
+	seclabel u:r:kernellog:s0
+	writepid  /dev/cpuset/background/tasks
+
+service mtdoopslog /system/bin/sh /system/bin/mtdoopslog.sh
+	class main
+	user system
+	group system
+	disabled
+	oneshot
+	seclabel u:r:mtdoopslog:s0
+	writepid  /dev/cpuset/background/tasks
+
+on property:persist.sys.offlinelog.bootlog=true
+	start bootlog
+
+on property:persist.sys.offlinelog.bootlog=false
+	stop bootlog
+
+on property:persist.sys.offlinelog.logcatkernel=true
+	write /proc/sys/kernel/printk 8
+        start logcatkernel
+
+on property:persist.sys.offlinelog.logcatkernel=false
+        stop logcatkernel
+
+on property:persist.sys.offlinelog.logcat=true
+	start logcatlog
+
+on property:persist.sys.offlinelog.logcat=false
+	stop logcatlog
