@@ -1,0 +1,35 @@
+{
+    "title": "曲线",
+    "titleResId": "wallpaper_group_curves_title",
+    "subtitle":"Damon Hsieh",
+    "subtitleResId":"wallpaper_group_curves_subtitle",
+    "cardType": 1,
+    "count": 6,
+    "slideCount": 6,
+    "randomOrder": false,
+    "wallpapers": [{
+        "thumbPath": "./Curves01.jpg",
+        "originPath": "./Curves01.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Curves02.jpg",
+        "originPath": "./Curves02.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Curves03.jpg",
+        "originPath": "./Curves03.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Curves04.jpg",
+        "originPath": "./Curves04.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Curves05.jpg",
+        "originPath": "./Curves05.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Curves06.jpg",
+        "originPath": "./Curves06.jpg",
+        "type": "wallpaper"
+    }]
+}

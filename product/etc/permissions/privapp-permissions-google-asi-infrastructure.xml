@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<permissions>
+    <privapp-permissions package="com.google.android.as">
+        <permission name="android.permission.READ_OEM_UNLOCK_STATE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

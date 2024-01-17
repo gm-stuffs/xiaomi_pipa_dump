@@ -1,0 +1,30 @@
+{
+    "title": "白日梦境",
+    "titleResId": "wallpaper_group_petros_koublis_title",
+    "subtitle":"Petros & Claudia Koublis",
+    "cardType": 1,
+    "count": 5,
+    "slideCount": 5,
+    "randomOrder": false,
+    "wallpapers": [{
+        "thumbPath": "./PetrosKoublis01.jpg",
+        "originPath": "./PetrosKoublis01.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./PetrosKoublis02.jpg",
+        "originPath": "./PetrosKoublis02.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./PetrosKoublis03.jpg",
+        "originPath": "./PetrosKoublis03.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./PetrosKoublis04.jpg",
+        "originPath": "./PetrosKoublis04.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./PetrosKoublis05.jpg",
+        "originPath": "./PetrosKoublis05.jpg",
+        "type": "wallpaper"
+    }]
+}

@@ -1,0 +1,38 @@
+{
+    "title": "自然肌理",
+    "titleResId": "wallpaper_group_natural_texture_title",
+    "subtitle":"Kai Hornung,Jan Erik Waider,Tom Hegen",
+    "cardType": 2,
+    "count": 7,
+    "slideCount": 7,
+    "randomOrder": false,
+    "wallpapers": [{
+        "thumbPath": "./NaturalTexture001.jpg",
+        "originPath": "./NaturalTexture001.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./NaturalTexture002.jpg",
+        "originPath": "./NaturalTexture002.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./NaturalTexture003.jpg",
+        "originPath": "./NaturalTexture003.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./NaturalTexture004.jpg",
+        "originPath": "./NaturalTexture004.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./NaturalTexture005.jpg",
+        "originPath": "./NaturalTexture005.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./NaturalTexture006.jpg",
+        "originPath": "./NaturalTexture006.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./NaturalTexture007.jpg",
+        "originPath": "./NaturalTexture007.jpg",
+        "type": "wallpaper"
+    }]
+}

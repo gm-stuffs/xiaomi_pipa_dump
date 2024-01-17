@@ -1,0 +1,33 @@
+{
+    "title": "MIUI 14",
+    "titleResId": "wallpaper_group_miui_14_title",
+    "cardType": 1,
+    "count": 6,
+    "slideCount": 6,
+    "randomOrder": false,
+    "wallpapers": [{
+        "thumbPath": "./MIUI01.jpg",
+        "originPath": "./MIUI01.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MIUI02.jpg",
+        "originPath": "./MIUI02.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MIUI03.jpg",
+        "originPath": "./MIUI03.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MIUI04.jpg",
+        "originPath": "./MIUI04.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MIUI05.jpg",
+        "originPath": "./MIUI05.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./MIUI06.jpg",
+        "originPath": "./MIUI06.jpg",
+        "type": "wallpaper"
+    }]
+}
