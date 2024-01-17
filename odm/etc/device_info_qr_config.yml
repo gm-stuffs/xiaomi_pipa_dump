@@ -1,0 +1,262 @@
+device: pipa
+enableShutdownFunc: true
+positions:
+  important_info:
+    size: 400
+    xAxis: 10
+    yAxis: 390
+  expand_info:
+    size: 400
+    xAxis: 45
+    yAxis: 50
+ 
+importantInfoList:
+  # PCB SN
+  - type: command
+    name: pcb_sn
+    key_name: a
+    need_name: true
+    command: getprop ro.ril.oem.sno
+    
+  # Battery level
+  - type: command
+    name: battery_level
+    key_name: b
+    need_name: true
+    command: printf "%3d%%" $(dumpsys battery | head -11 | tail -1 | cut -d ' ' -f 4)
+    
+  # MEID, if the phone supports CDMA, it must have the value
+  - type: sim
+    name: meid
+    key_name: g
+    need_name: true
+    
+  # Factory ID
+  - type: command
+    name: factory_id
+    key_name: o
+    need_name: true
+    command: getprop ro.ril.factory_id
+    
+  # Software version
+  - type: software_version
+    name: software_version
+    key_name: v
+    
+checkInfoList:
+  # Secure boot status
+  - type: command
+    name: secure_boot
+    key_name: a
+    command: getprop ro.boot.secureboot
+    pass_value: 1
+    
+  # Whether the bootloader lock is locked
+  - type: command
+    name: bootloader_lock
+    key_name: b
+    command: getprop ro.boot.verifiedbootstate
+    pass_value: green
+    
+  # RPMP provision
+  - type: command
+    name: rpmp
+    key_name: c
+    # Qualcomm
+    command: getprop vendor.sys.rpmb_state
+    pass_value: 23
+    
+  # Speaker calibrate status check
+  - type: command
+    name: speaker_calibrate
+    key_name: e
+    command: getprop vendor.audio.chk.cal.spk
+    pass_value: 1
+    
+  # Hardware version
+  - type: command
+    name: hardware_version
+    key_name: m
+    command: getprop ro.boot.hwlevel
+    pass_value: MP
+    
+  # Battery encryption check
+  - type: command
+    name: battery_encryption
+    key_name: y
+    # desc: printf "$(node_one)$(node_two)"
+    command: printf "$(cat /sys/class/power_supply/batt_verify/chip_ok)$(cat /sys/class/power_supply/batt_verify/authen_result)$(cat /sys/class/power_supply/batt_verify_slave/chip_ok)$(cat /sys/class/power_supply/batt_verify_slave/authen_result)"
+    # desc: "${pass_value_one}${pass_value_two}"
+    pass_value: 1111
+    
+  # Debug policy
+  - type: command
+    name: debug_policy
+    key_name: l
+    command: getprop ro.boot.dp
+    pass_value: 0x0
+    
+  # Security Key: FIDO
+  - type: security_key
+    name: fido
+    key_name: h
+    
+  # Security Key: IFAA
+  - type: security_key
+    name: ifaa
+    key_name: g
+    
+  # Digital rights management key: Widevine
+  - type: security_key
+    name: widevine
+    key_name: q
+    
+  # Android Key box, services for DRM(Digital Rights Management)
+  - type: security_key
+    name: key_box
+    key_name: t
+    
+  # Airplane mode check
+  - type: command
+    name: airplane_mode
+    key_name: Y
+    command: settings get global airplane_mode_on
+    pass_value: 0
+    
+  # Screen calibrate check
+  - type: command
+    name: screen_calibrate
+    key_name: x
+    command: getprop vendor.display.panel.calibration.status
+    pass_value: 0
+    
+  # Check for residual test pictures
+  - type: command
+    name: picture
+    key_name: p
+    command: ls -lR /sdcard/DCIM | grep -c "^-"
+    pass_value: 0
+    
+  # Sensor calibrate status check
+  - type: sensor
+    name: sensor
+    key_name: z
+    pass_value: 1111
+    
+  # devauth status
+  - type: command
+    name: devauth
+    key_name: F
+    command: "[[ $(getprop persist.vendor.sys.devauth) > 0 ]] && echo true || echo false"
+    pass_value: true
+    
+  # recovery apps absence
+  - type: command
+    name: recovery
+    key_name: G
+    command: "[ $(getprop ro.build.ab_update) == true ] && path='/mnt/rescue/recovery/last_format_data' || path='/cache/recovery/last_format_data'; [ -f $path ] && echo 'EXIST' || echo 'NOT EXIST'"
+    pass_value: NOT EXIST
+
+  # Xiaomi account
+  - type: account
+    name: mi_account
+    key_name: T
+    
+  # shipmode
+  - type: ship_mode
+    name: ship_mode
+    key_name: K
+    
+expandInfoList:
+  # Phone SN
+  - type: command
+    name: phone_sn
+    key_name: c
+    command: getprop ro.ril.oem.psno
+    
+  # System image version
+  - type: command
+    name: version
+    key_name: d
+    command: getprop ro.build.version.incremental
+    
+  # IMEI1
+  - type: sim
+    name: imei1
+    key_name: e
+    
+  # IMEI2
+  - type: sim
+    name: imei2
+    key_name: f
+    
+  # Bluetooth address
+  - type: command
+    name: bluetooth_address
+    key_name: h
+    #    command: getprop ro.ril.oem.btmac
+    command: a=($(od -An -tx1 /data/vendor/mac_addr/bt.mac));s=$(IFS=:; echo "${a[*]}");echo $s
+    
+  # WiFi address
+  - type: command
+    name: wifi_address
+    key_name: i
+    #    command: getprop ro.ril.oem.wifimac
+    command: a=($(od -An -tx1 /data/vendor/mac_addr/wlan.mac));s=$(IFS=:; echo "${a[*]}");echo $s
+    
+  # CPU id
+  - type: command
+    name: cpu_id
+    key_name: k
+    command: getprop ro.boot.cpuid
+    
+  # Storage id
+  - type: command
+    name: storage_id
+    key_name: l
+    command: cat sys/class/mi_memory/mi_memory_device/ufshcd0/dump_string_desc_serial
+    
+  # tzProvision
+  - type: security_key
+    name: tz_key
+    key_name: m
+
+  # Hardware version
+  - type: command
+    name: hardware_version
+    key_name: n
+    command: getprop ro.boot.hwversion
+    
+  # Maximum CPU frequency
+  - type: cpu_frequency
+    name: cpu_frequency
+    key_name: p
+    param_map:
+      core_number: 8
+      useHz: true
+      
+  # Memory size
+  - type: command
+    name: memory_size
+    key_name: q
+    command: printf "$(cat /proc/mv | head -1 | cut -d ' ' -f 3)GB"
+    
+  # Storage size
+  - type: command
+    name: storage_size
+    key_name: r
+    command: printf "$(cat /proc/mv | head -2 | tail -1 | cut -d ' ' -f 3)GB"
+    
+  # Project code
+  - type: project_name
+    name: project_name
+    key_name: s
+    param_map:
+      pipa: M82
+     
+  # MIUI cust image version
+  # Optional
+  - type: command
+    name: cust_version
+    key_name: T
+    command: getprop ro.miui.business.version

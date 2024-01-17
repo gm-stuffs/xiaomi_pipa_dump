@@ -1,0 +1,102 @@
+{
+  "packageName": "com.le123.ysdq",
+  "forceDark": true,
+  "mainRule": 128,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.elinkway.infinitemovies.channel.activity.ExtraTabActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "left_back_iv",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "rl_tab"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "content_channel"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.elinkway.infinitemovies.ui.activity.SearchActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.RelativeLayout",
+          "id": "hot_search_tab_rl",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "androidx.recyclerview.widget.RecyclerView",
+              "index": -1,
+              "id": "hot_search_rv"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.elinkway.infinitemovies.download.activity.DownloadActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "hot_download_title_tv",
+          "forceDark": false
+        }
+      ]
+    },
+    {
+      "activityName": "com.elinkway.infinitemovies.base.activity.FavoriteActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "title_hot_favoriate",
+          "forceDark": false
+        }
+      ]
+    },
+    {
+      "activityName": "com.elinkway.infinitemovies.ui.activity.PlayHistoryActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.recyclerview.widget.RecyclerView",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.scwang.smartrefresh.layout.SmartRefreshLayout",
+              "index": -1,
+              "id": "refresh_layout"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

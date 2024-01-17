@@ -1,0 +1,1076 @@
+{
+  "packageName": "com.anjuke.android.app",
+  "forceDark": true,
+  "mainRule": 16,
+  "secondaryRule": 4,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.anjuke.android.app.newhouse.newhouse.building.detail.XFBuildingDetailActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "SimpleDraweeView",
+          "forceDark": true,
+          "usage": 2,
+          "id": "specialCarIcon",
+          "conditions": [
+            {
+              "viewName": "XFCommonBottomBarView",
+              "parent": 3,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "specialCarLayout"
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "ConstraintLayout",
+          "forceDark": true,
+          "id": "vrDaikanLayout",
+          "usage": 103,
+          "backgroundUsage": 103
+        },
+        {
+          "viewName": "LinearLayout",
+          "forceDark": true,
+          "id": "leftContainer",
+          "usage": 103,
+          "backgroundUsage": 103
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "id": "shade4",
+          "usage": 105,
+          "backgroundUsage": 105
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "lightText",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "bottomContainer"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "title",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.facebook.drawee.view.SimpleDraweeView",
+              "index": 0,
+              "id": "icon"
+            }
+          ]
+        },
+        {
+          "viewName":"androidx.appcompat.widget.AppCompatTextView",
+          "id":"title",
+          "forceDark":true,
+          "usage":103,
+          "conditions":[
+            {
+              "parent":0,
+              "viewName":"android.widget.LinearLayout",
+              "index":-1
+            },
+            {
+              "parent":2,
+              "viewName":"android.widget.LinearLayout",
+              "index":-1,
+              "id":"mainContainer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.mainmodule.common.activity.MainTabPageActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "AppCompatTextView",
+          "forceDark": false,
+          "id": "newTitle"
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 2,
+          "id": "comment_icon",
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "comment_layout"
+            },
+            {
+              "viewName": "RelativeLayout",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 2,
+          "id": "like_icon",
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "like_layout"
+            },
+            {
+              "viewName": "RelativeLayout",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.newhouse.newhouse.building.list.homepage.XFHomePageActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "SimpleDraweeView",
+          "forceDark": true,
+          "usage": 2,
+          "id": "toolIcon",
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "iconContainer"
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 4,
+              "index": -1,
+              "id": "buildingHomeThemeContainer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.secondhouse.house.detailv3.SecondDetailActivityV3",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "SimpleDraweeView",
+          "forceDark": true,
+          "usage": 2,
+          "conditions": [
+            {
+              "viewName": "ConstraintLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "callBarV4MainLayout"
+            },
+            {
+              "viewName": "ContentFrameLayout",
+              "parent": 3,
+              "index": -1,
+              "id": "content"
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 2,
+          "id": "titleV3BackBtn"
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.secondhouse.house.list.SecondHouseListActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "SimpleDraweeView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "RecyclerView",
+              "parent": 2,
+              "index": -1,
+              "id": "rvSubNavigationTab"
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "secondListSearchTopIcon",
+          "conditions": [
+            {
+              "viewName": "SecondListSearchTitleBar",
+              "parent": 0,
+              "index": -1,
+              "id": "searchTitleBar"
+            },
+            {
+              "viewName": "SecondListSearchViewTitleBar",
+              "parent": 2,
+              "index": -1,
+              "id": "titleBar"
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatImageButton",
+          "forceDark": true,
+          "usage": 103,
+          "id": "secondListSearchBackButton"
+        },
+        {
+          "viewName": "AppCompatImageButton",
+          "forceDark": true,
+          "usage": 103,
+          "id": "secondListSearchWechatButton"
+        }
+      ]
+    },
+    {
+      "activityName": "com.wuba.housecommon.category.activity.HouseCategoryListFragmentActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "WubaDraweeView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "house_category_main_business_img",
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "WubaDraweeView",
+          "forceDark": true,
+          "usage": 2,
+          "id": "house_category_title_bar_normal_icon"
+        },
+        {
+          "viewName": "WubaDraweeView",
+          "forceDark": true,
+          "usage": 2,
+          "id": "wdv_back"
+        },
+        {
+          "viewName": "WubaDraweeView",
+          "forceDark": true,
+          "usage": 2,
+          "id": "iv_house_zf_category_search_left_icon"
+        },
+        {
+          "viewName": "WubaDraweeView",
+          "forceDark": true,
+          "usage": 2,
+          "id": "house_category_title_bar_im_icon"
+        },
+        {
+          "viewName": "RecycleImageView",
+          "forceDark": true,
+          "usage": 2,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "RelativeLayout",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.wuba.housecommon.list.activity.HouseInfoListFragmentActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "WubaDraweeView",
+          "forceDark": true,
+          "usage": 2,
+          "id": "tradeline_top_bar_right_expand_icon"
+        },
+        {
+          "viewName": "ImageButton",
+          "forceDark": true,
+          "usage": 103,
+          "id": "title_personal_btn"
+        },
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "title_im_btn",
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "title_im_layout"
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.wuba.housecommon.detail.activity.HouseApartmentActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "WubaDraweeView",
+          "forceDark": true,
+          "usage": 2,
+          "id": "rent_contact_bar_left_module_img"
+        },
+        {
+          "viewName": "ImageButton",
+          "forceDark": true,
+          "usage": 103,
+          "id": "title_personal_btn"
+        },
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "title_im_btn"
+        },
+        {
+          "viewName": "RecycleImageView",
+          "forceDark": true,
+          "usage": 2,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "CollectView",
+              "parent": 2,
+              "index": -1,
+              "id": "collect_view"
+            }
+          ]
+        },
+        {
+          "viewName": "LottieAnimationView",
+          "forceDark": true,
+          "usage": 2,
+          "id": "lottie_rent",
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 3,
+              "index": -1,
+              "id": "left_part"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.renthouse.activity.HouseDetailActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "RecycleImageView",
+          "forceDark": true,
+          "usage": 2,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "CollectView",
+              "parent": 2,
+              "index": -1,
+              "id": "collect_view"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.secondhouse.decoration.home.DecorationHomeActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DecorationHomeSearchTitleBar",
+              "parent": 0,
+              "index": -1,
+              "id": "titleBar"
+            },
+            {
+              "viewName": "ContentFrameLayout",
+              "parent": 2,
+              "index": -1,
+              "id": "content"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.mainmodule.hybrid.HybridActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "AppCompatImageButton",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "title_left_layout"
+            },
+            {
+              "viewName": "NormalTitleBar",
+              "parent": 2,
+              "index": -1,
+              "id": "title"
+            }
+          ]
+        },
+        {
+          "viewName": "SweetWebView",
+          "forceDark": false,
+          "blackMask": true
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.rn.activity.RNActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "ReactImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "ReactViewGroup",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "RNGestureHandlerEnabledRootView",
+              "parent": 8,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "ReactImageView",
+          "forceDark": true,
+          "usage": 2,
+          "conditions": [
+            {
+              "viewName": "ReactViewGroup",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "ReactScrollView",
+              "parent": 2,
+              "index": 0
+            }
+          ]
+        },
+        {
+          "viewName": "ReactImageView",
+          "forceDark": true,
+          "usage": 2,
+          "backgroundUsage": 2,
+          "conditions": [
+            {
+              "viewName": "ReactViewGroup",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "ReactScrollView",
+              "parent": 6,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "ReactImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "ReactViewGroup",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "RNGestureHandlerEnabledRootView",
+              "parent": 6,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "ReactImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "ReactViewGroup",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "RNGestureHandlerEnabledRootView",
+              "parent": 7,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "ReactImageView",
+          "forceDark": true,
+          "usage": 2,
+          "conditions": [
+            {
+              "viewName": "ReactViewGroup",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "ReactScrollView",
+              "parent": 3,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "ReactImageView",
+          "forceDark": false,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "ReactViewGroup",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "ReactScrollView",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.facebook.react.views.image.ReactImageView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.facebook.react.views.view.ReactViewGroup",
+              "index": -1
+            },
+            {
+              "parent": 12,
+              "viewName": "com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView",
+              "index": -1
+            },
+            {
+              "parent": 13,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "fragment_rn_container"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.mainmodule.search.MainSearchV2Activity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "RelativeLayout",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 2,
+              "index": -1,
+              "id": "hot_search_layout"
+            },
+            {
+              "viewName": "HorizontalScrollViewPager",
+              "parent": 0,
+              "index": -1,
+              "id": "hot_viewpager"
+            }
+          ]
+        },
+        {
+          "viewName": "WubaDraweeView",
+          "forceDark": false,
+          "id": "wdv_top_title_icon"
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.chat.chat.WChatActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "AppCompatTextView",
+          "forceDark": false,
+          "id": "requirement_content_tv"
+        },
+        {
+          "viewName": "AppCompatTextView",
+          "forceDark": false,
+          "id": "requirement_details_tv"
+        },
+        {
+          "viewName": "android.widget.LinearLayout",
+          "id": "ll_msg_container",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "content_item"
+            },
+            {
+              "parent": 4,
+              "viewName": "com.android.gmacs.widget.recycler.WChatRecyclerView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.LinearLayout",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "content_item"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.android.gmacs.widget.recycler.WChatRecyclerView",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "contentLayout"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.RelativeLayout",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "content_item"
+            },
+            {
+              "parent": 4,
+              "viewName": "com.android.gmacs.widget.recycler.WChatRecyclerView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.FrameLayout",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "content_item"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.android.gmacs.widget.recycler.WChatRecyclerView",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "contentLayout"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageButton",
+          "id": "left_image_btn",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "relativelayout_base"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "resizeLayout"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.login.activity.AjkLoginPageActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "AppCompatTextView",
+          "forceDark": true,
+          "usage":103,
+          "conditions": [
+            {
+              "viewName":"LinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "AppCompatTextView",
+              "parent": 1,
+              "index": 0,
+              "id": "login_other_channel"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.mainmodule.common.activity.MainTabPageActivityV5",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "closeImageView",
+          "forceDark": false
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "map_entrance_tv",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1,
+              "id": "search_container"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "publish_entrance_tv",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1,
+              "id": "search_container"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "user_super_vip_tv",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "user_info_normal_vip_rl"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "user_info_vip_tip_tv",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "vip_container"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "prompt_iv",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "title"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.anjuke.android.app.mainmodule.map.activity.SearchMapActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageButton",
+          "id": "btn_locate",
+          "forceDark": true,
+          "usage": 103
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "attentionImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "gaunzhuView"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1,
+              "id": "draw_view"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageButton",
+          "id": "imagebtnleft",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageButton",
+          "id": "imagebtnright",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageButton",
+          "id": "header_wchat_msg_image_button",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "header_wchat_msg_frame_layout"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "forceDarkViewGlobalConfigList": [
+    {
+      "viewName": "TextView",
+      "forceDark": false,
+      "conditions": [
+        {
+          "viewName": "RelativeLayout",
+          "parent": 0,
+          "index": -1
+        },
+        {
+          "viewName": "ChatMessageNotifyFloatView",
+          "parent": 3,
+          "index": -1
+        }
+      ]
+    },
+    {
+      "viewName": "TextView",
+      "forceDark": false,
+      "id": "msg_content_text_view"
+    }
+  ]
+}

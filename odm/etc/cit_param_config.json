@@ -1,0 +1,443 @@
+{
+    "version": "1.0",
+    "product": "pipa",
+    "testitems": [
+        {
+            "name": "home_version_info_test",
+            "caption": "版本信息测试",
+            "config": {
+                "eseNFC_chip_model":"sn110t"
+            }
+        },
+        {
+            "name": "home_keyboard_check_test",
+            "caption": "按键测试",
+            "config": {
+                "support_check_keys": [
+                    "volumeUp_down",
+                    "volumeUp_up",
+                    "volumeDown_down",
+                    "volumeDown_up",
+                    "power_down",
+                    "power_up"
+                ]
+            }
+        },
+	{
+	    "name": "home_external_keyboard_test",
+	    "caption": "外接键盘测试"
+	},
+        {
+            "name": "home_led_test",
+            "caption": "LED灯测试",
+            "config": {
+                "support_checked_leds": [
+                    {
+                        "name": "cit_lcdlight_brightness",
+                        "type": "screen_brightness",
+                        "min_brightness": 2,
+                        "max_brightness": 2047
+                    },
+                    {
+                        "name": "cit_torch_first",
+                        "type": "camera_flash",
+                        "switch_node_path": "/sys/class/leds/led:switch_0",
+                        "torch_node_path": "/sys/class/leds/led:torch_0"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "home_touch_panel_test",
+            "caption": "触摸屏测试",
+       	    "config": {
+		"support_pencil_check": true	
+	    }
+        },
+        {
+            "name": "home_display_test",
+            "caption": "屏幕显示测试"
+        },
+        {
+            "name": "home_conf_tl_audio_speaker_test",
+            "caption": "顶部左侧扬声器测试",
+            "title": "cit_top_left_speaker_test",
+            "summary": "cit_top_left_speaker_test",
+            "config":{
+              "audio_params":"speaker_number=tl-spk"
+            }
+        },
+        {
+            "name": "home_conf_tr_audio_speaker_test",
+            "caption": "顶部右侧扬声器测试",
+            "title": "cit_top_right_speaker_test",
+            "summary": "cit_top_right_speaker_test",
+            "config":{
+              "audio_params":"speaker_number=tr-spk"
+            }
+        },
+	{
+            "name": "home_conf_bl_audio_speaker_test",
+            "caption": "底部左侧扬声器测试",
+            "title": "cit_bottom_left_speaker_test",
+            "summary": "cit_bottom_left_speaker_test",
+            "config":{
+              "audio_params":"speaker_number=bl-spk"
+            }
+        },
+	{
+            "name": "home_conf_br_audio_speaker_test",
+            "caption": "底部右侧扬声器测试",
+            "title": "cit_bottom_right_speaker_test",
+            "summary": "cit_bottom_right_speaker_test",
+            "config":{
+              "audio_params":"speaker_number=br-spk"
+            }
+        },
+        {
+            "name": "home_audio_main_mic_test",
+            "caption": "main mic测试",
+            "title": "test_main_mic",
+            "summary": "test_main_mic",
+            "config":{
+              "mic_type_params":"main_ns",
+              "mic_tip_params":"main_mic_check_record_tip"
+           }
+        },
+        {
+            "name": "home_audio_back_mic_test",
+            "caption": "back mic测试",
+            "title": "test_back_mic",
+            "summary": "test_back_mic",
+            "config":{
+              "mic_type_params":"back_ns",
+              "mic_tip_params":"back_mic_check_record_tip"
+            }
+        },        
+        {
+            "name": "home_audio_sidetop_mic_test",
+            "caption": "sidetop mic测试",
+            "title": "test_sidetop_mic",
+            "summary": "test_sidetop_mic",
+            "config":{
+              "mic_type_params":"sidetop_ns",
+              "mic_tip_params":"sidetop_mic_check_record_tip"
+            }
+        },
+        {
+            "name": "home_audio_sidebottom_mic_test",
+            "caption": "sidebottom mic测试",
+            "title": "test_sidebottom_mic",
+            "summary": "test_sidebottom_mic",
+            "config":{
+              "mic_type_params":"sidebottom_ns",
+              "mic_tip_params":"sidebottom_mic_check_record_tip"
+            }
+        },
+        {
+            "name": "home_audio_head_set_test",
+            "caption": "耳机测试",
+            "config": {
+                "head_set_config": "type-c"
+            }
+        },
+        {
+            "name": "home_wifi_scan_test",
+            "caption": "WIFI扫描测试"
+        },
+        {
+            "name": "home_wifi_address_test",
+            "caption": "WIFI地址测试"
+        },
+        {
+            "name": "home_bt_scan_test",
+            "caption": "BT扫描测试"
+        },
+        {
+            "name": "home_bt_address_test",
+            "caption": "BT地址测试"
+        },
+        {
+            "name": "home_sensor_accelermeter_test",
+            "caption": "加速度感应器测试"
+        },
+        {
+            "name": "home_sensor_gyroscope_test",
+            "caption": "陀螺仪感应器测试"
+        },
+        {
+            "name": "home_sensor_light_test",
+            "caption": "光线感应器测试",
+            "config": {
+                "sensor_light_val_path_config": "sys/class/backlight/panel0-backlight/brightness_clone",
+		"sensor_light_support_check_cct":true
+            }
+        },
+        {
+            "name": "home_sensor_hall_test_2",
+            "caption": "霍尔感应器测试",
+            "config": {
+                "hall_sensors" : [{
+                    "type":"main_hall",
+                    "x":1700,
+                    "y":300
+                },
+		{
+                    "type":"keyboard_hall",
+                    "keyboard_hall_cmd_flag":true,
+                    "x":1650,
+                    "y":1300
+                },
+                {
+                    "type":"pencil_hall",
+                    "grep":"/sys/class/power_supply/fuda/reverse_chg_hall3",
+                    "x":1700,
+                    "y":1500
+                },
+                {
+                    "type":"pencil_hall",
+                    "grep":"/sys/class/power_supply/fuda/reverse_chg_hall4",
+                    "x":1700,
+                    "y":1950
+                }]
+            }
+        },
+        {
+            "name": "home_rear_main_camera_test",
+            "caption": "后置主相机测试",
+            "config": {
+                "camera_id_rear_main": 0
+            }
+        },
+        {
+            "name": "home_front_main_test",
+            "caption": "前置相机测试",
+            "config": {
+                "camera_id_front_main": 1
+            }
+        },
+        {
+            "name": "home_battery_test",
+            "caption": "电池测试",
+            "config": {
+                "battery_chip_ok_path_config": "/sys/class/power_supply/batt_verify/chip_ok",
+                "battery_autnentic_path_config": "/sys/class/power_supply/batt_verify/authen_result",
+                "support_dual_connector": true,
+                "battery_dual_connector_path_config": "/sys/class/power_supply/batt_verify_slave/chip_ok",
+		"battery_slave_autnentic_path_config": "/sys/class/power_supply/batt_verify_slave/authen_result",
+		"battery_id_path_config": "sys/class/power_supply/bms/resistance_id"
+            }
+        },
+        {
+            "name": "home_charger_test",
+            "caption": "充电器测试",
+            "config": {
+                "support_pd_charger": true,
+                "charger_type_path_config": "/sys/class/power_supply/usb/type",
+                "cc_orientation_path_config": "/sys/class/power_supply/usb/typec_cc_orientation"
+            }
+        },
+	{
+            "name":"home_reverse_wireless_charger_test",
+            "caption":"反向无线充电",
+            "title": "cit_pencil_reverse_wireless_charger_title",
+            "summary": "cit_pencil_reverse_wireless_charger_summary",
+            "config":{
+                "reverse_wireless_charge_switch_path_config":"/sys/class/power_supply/wireless/reverse_chg_mode",
+                "reverse_wireless_charge_state_path_config":"/sys/class/power_supply/wireless/reverse_pen_chg_state"
+            }
+        },
+        {
+            "name": "home_otg_test",
+            "caption": "OTG",
+            "config": {
+                "cc_orientation_path_config": "/sys/class/power_supply/usb/typec_cc_orientation"
+            }
+        },
+	{
+	    "name": "home_usb3_test",
+	    "caption": "USB3.0"
+	},
+        {
+            "name": "home_sensor_sar_data_collect_check",
+            "caption": "SAR Sensor数据采集测试",
+            "config": {
+                "region_config": [
+		            {
+						"region_name": "cn",
+						"sar_sensor_num": 1,
+						"show_fake_cali_bt": true,
+						"sar_sensors_config":[
+							{
+								"sar_sensor_id": 33171015,
+								"sar_chanel_total_num": 3,
+								"need_check_set_config": [0],
+								"threshold_check_data_config": ["-100,100,400,200000"]
+							}
+						]
+		           },
+					{
+						"region_name": "global",
+						"sar_sensor_num": 1,
+						"show_fake_cali_bt": true,
+						"sar_sensors_config":[
+							{
+								"sar_sensor_id": 33171015,
+								"sar_chanel_total_num": 3,
+								"need_check_set_config": [0],
+								"threshold_check_data_config": ["-100,100,400,200000"]
+							}
+						]
+		           }
+               ]
+           }
+        },
+        {
+          "name": "security_certificate_test",
+          "caption": "Security证书更新工具"
+        }
+    ],
+    "auxiliaryTestItems": [
+        {
+            "name": "bt_tool_test",
+            "caption": "蓝牙测试工具"
+        },
+        {
+            "name": "wlan_tool_test",
+            "caption": "WLAN测试工具"
+        },
+        {
+            "name": "wlan_sniffer_tool_test",
+            "caption": "WLAN抓包测试工具"
+        },
+        {
+            "name": "accelermeter_sensor_cali",
+            "caption": "加速度感应器校准"
+        },
+        {
+            "name": "gyroscope_sensor_cali",
+            "caption": "陀螺仪感应器校准"
+        },
+        {
+            "name": "touch_pointer_location",
+            "caption": "触摸屏测试"
+        },
+        {
+            "name": "audio_speaker_cali",
+            "caption": "扬声器校准",
+            "config": {
+                "speaker_calibration_cmds": [
+                    "spkcal_88263s -c ",
+                    "spkcal_88263s -m "
+                ]
+            }
+        },
+        {
+            "name":"sar_sensor_collect_cali",
+            "caption":"SAR感应器数据收集和校准",
+            "config":{
+                "region_config": [
+                    {
+                        "region_name": "cn",
+                        "sar_sensor_num": 1,
+                        "sar_sensors_config":[
+                            {
+                                "sar_sensor_id": 33171015,
+                                "sar_chanel_total_num": 3,
+                                "need_check_set_config": [0],
+                                "threshold_check_data_config": ["-100,100,0,100000"]
+                            }
+                        ]
+                    },
+					{
+                        "region_name": "global",
+                        "sar_sensor_num": 1,
+                        "sar_sensors_config":[
+                            {
+                                "sar_sensor_id": 33171015,
+                                "sar_chanel_total_num": 3,
+                                "need_check_set_config": [0],
+                                "threshold_check_data_config": ["-100,100,0,100000"]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+	{
+            "name": "sar_sensor_authenti",
+            "caption": "Sar Authenti 测试"
+        },
+	{
+	    "name": "query_cust_img_version",
+ 	    "caption": "CUST_IMG版本检测工具"
+	}
+    ],
+    "autoTestItems": [
+    	{
+      	    "name": "auto_test_battery_dual_connector",
+      	    "caption": "自动化测试电池双连接器",
+      	    "config": {
+        	"battery_dual_connector_path_config": "/sys/class/power_supply/bms/chip_ok"
+            }
+    	},
+    	{
+	    "name": "auto_test_battery_auth",
+	    "caption": "自动化测试电池加密",
+	    "config":{
+	    	"battery_autnentic_path_config": "/sys/class/power_supply/batt_verify/authen_result",
+		"battery_chip_ok_path_config": "/sys/class/power_supply/batt_verify/chip_ok"
+             }
+	},
+	{
+	    "name": "auto_test_touch_self_check",
+	    "caption": "屏幕自检",
+	    "config":{
+	    	"auto_test_touch_panel_pad_cmd": "service call SurfaceFlinger 31117 i32 120"
+	    }
+	},
+        {
+            "name": "auto_test_camera_fuseid",
+            "caption": "摄像头FUSEID信息",
+            "config": {
+                "support_cam_fuseid_config": [
+                    {
+                        "name": "rearMain",
+                        "fuseid_sysprop": [
+                            "camera.sensor.rearMain.fuseID",
+                            "vendor.camera.sensor.rearMain.fuseID"
+                        ]
+                    },
+                    {
+                        "name": "frontMain",
+                        "fuseid_sysprop": [
+                            "vendor.camera.sensor.frontMain.fuseID"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "auto_test_rear_flash",
+            "caption": "后摄闪光灯测试",
+            "config": {
+                "support_checked_flashes": [
+                    {
+                        "name": "cit_torch_first",
+                        "switch_node_path": "/sys/class/leds/led:switch_0/brightness",
+                        "torch_node_path": "/sys/class/leds/led:torch_0/brightness",
+                        "trigger_node_path": "/sys/class/leds/led:switch_0/trigger",
+                        "brightness": 80
+                    }
+                ]
+            }
+        },
+        {
+            "name": "auto_test_device_info",
+            "caption": "自动化测试deviceInfo",
+            "config": {
+                "lcd_info_path_config": "/sys/class/drm/card0-DSI-1/panel_info"
+            }
+        }
+    ]
+}

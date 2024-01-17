@@ -1,0 +1,38 @@
+{
+  "packageName": "com.icbc",
+  "forceDark": true,
+  "mainRule": 1024,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.icbc.activity.main.MainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.facebook.drawee.view.SimpleDraweeView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "icon_img"
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "backgroundUsage": 103,
+          "id": "tabbar_btn"
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "ll_top"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

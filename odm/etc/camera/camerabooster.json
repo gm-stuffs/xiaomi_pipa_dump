@@ -1,0 +1,190 @@
+{
+    "version": "1.0",
+    "product": "pipa",
+    "threshold": {
+            "lowAdj_threshold": 0,
+            "3rd_lowAdj_threshold": 50,
+            "protect_locktask_num": 2,
+            "kill_tag": 31,
+            "3rd_kill_tag": 3
+        },
+    "support": {
+            "inhibit_3rdprocs_enable": true,
+            "oom_update_support": true,
+            "cam_boost_early_enable": true,
+            "perceptible_support": true,
+            "lmkd_perceptible_support":true,
+            "inhibit_procs_enable": true,
+            "skip_camera_boost": true
+        },
+    "oom": {
+            "oom_level": "51200:0,89600:100,128000:200,179200:251,262144:701,393216:800",
+            "psi_level": "30,20,13,8"
+        },
+    "kill_threshold": {
+            "com.tencent.mm": 716800,
+            "com.miui.gallery": 235520,
+            "com.miui.home": 716800,
+            "com.miui.personalassistant": 204800,
+            "com.miui.screenrecorder": 102400,
+            "com.miui.miwallpaper": 409600
+    },
+    "configs": [
+        {
+            "name": "protect_list",
+            "config": [
+                "com.tencent.mobileqq",
+                "com.ss.android.lark.kami",
+                "com.miui.vpnsdkmanager"
+            ]
+        },
+        {
+            "name": "perceptible_list",
+            "config": [
+                "com.miui.gallery",
+                "com.miui.personalassistant",
+                "com.miui.screenrecorder"
+            ]
+        },
+        {
+            "name": "white_list",
+            "config": [
+                "com.android.camera",
+                "com.miui.miwallpaper",
+                "com.miui.home",
+                "com.tencent.mm:push",
+                "com.tencent.mobileqq:MSF",
+                "com.ss.android.lark.kami:wschannel",
+                "android.process.media",
+                "com.android.traceur",
+                "com.phonetest.application:CameraMemoryWatcher",
+                "android.camera.cts",
+                "android.camera.cts:errorLoggingServiceProcess",
+                "com.miui.avpressuretest",
+                "com.xiaomi.bluetooth",
+                "com.tencent.mm"
+            ]
+        },
+        {
+            "name": "inhibit_app_list",
+            "config": [
+                "com.google.android.providers.media.module",
+                "com.sohu.inputmethod.sogou.xiaomi",
+                "com.tencent.qqlive",
+                "com.xingin.xhs",
+                "tv.danmaku.bili",
+                "com.ss.android.article.news",
+                "com.ss.android.article.lite",
+                "com.netease.cloudmusic",
+                "com.qiyi.video",
+                "com.smile.gifmaker",
+                "com.sina.weibo",
+                "com.ss.android.ugc.aweme",
+                "com.ss.android.ugc.aweme.lite",
+                "com.ss.android.lark.kami",
+                "com.miHoYo.ys.mi",
+                "com.miui.securitycenter"
+            ]
+        },
+        {
+            "name": "inhibit_native_list",
+            "config": [
+                "com.google.android.gms.persistent",
+                "/system/bin/logd",
+                "/vendor/bin/diag-router",
+                "/apex/com.android.adbd/bin/adbd",
+                "/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti",
+                "/vendor/bin/mlipayd@1.1"
+            ]
+        },
+        {
+            "name": "inhibit_3rdscene_list",
+            "config": [
+                "com.gorgeous.lite/com.light.beauty.mainpage.MainActivity",
+                "com.tencent.mm/.plugin.scanner.ui.BaseScanUI",
+                "com.eg.android.AlipayGphone/com.alipay.mobile.scan.as.main.MainCaptureActivity",
+                "com.duowan.kiwi/com.duowan.liveroom.LiveRoomActivity",
+                "air.tv.douyu.android/com.dy.live.activity.RecorderCameraLandActivity",
+                "air.tv.douyu.android/com.dy.live.activity.RecorderCameraPortraitActivity",
+                "com.duowan.mobile/com.yy.mobile.plugin.pluginmobilelive.MobileLiveActivity"
+            ]
+        },
+    ],
+	"oom_6Gmem": {
+            "oom_level": "18432:0,23040:100,27648:200,51621:300,115712:800,216370:900"
+        },
+    "threshold_6Gmem": {
+            "skip_task": 1,
+            "adj_threshold": 701,
+            "lowAdj_threshold": 0,
+            "cam_boost_threshold": 2097152,
+            "lowerAdj_freeMem_threshold":368640,
+            "3rd_lowAdj_threshold":201,
+            "cam_boost_ext_mem":462848,
+            "skip_task_lower":1,
+            "intercept_restart_time": 3000,
+            "kill_tag":31
+
+        },
+    "configs_cn": [
+        {
+            "name": "intercept_restart_list",
+            "config": [
+                "com.xiaomi.bsp.gps.nps",
+                "com.android.settings:remote",
+                "com.google.process.gservices",
+                "com.google.android.gms",
+                "com.google.android.gms.persistent",
+                "com.google.process.gapps",
+                "com.android.vending"
+            ]
+        },
+        {
+            "name": "inhibit_app_list",
+            "config": [
+                "com.google.android.providers.media.module",
+                "com.sohu.inputmethod.sogou.xiaomi",
+                "com.google.process.gservices",
+                "com.google.android.gms",
+                "com.google.android.gms.persistent",
+                "com.google.process.gapps",
+                "com.android.vending",
+                "com.tencent.qqlive",
+                "com.xingin.xhs",
+                "tv.danmaku.bili",
+                "com.ss.android.article.news",
+                "com.ss.android.article.lite",
+                "com.netease.cloudmusic",
+                "com.qiyi.video",
+                "com.smile.gifmaker",
+                "com.sina.weibo",
+                "com.ss.android.ugc.aweme",
+                "com.ss.android.ugc.aweme.lite",
+                "com.ss.android.lark.kami",
+                "com.miHoYo.ys.mi",
+                "com.miui.securitycenter"
+            ]
+        },
+        {
+            "name": "black_list",
+            "config": [
+                "com.miui.newhome:launcher",
+                "com.miui.systemAdSolution",
+                "com.xiaomi.smarthome:plugin0",
+                "com.xiaomi.smarthome",
+                "com.android.quicksearchbox",
+                "com.miui.systemAdSolution:ui",
+                "com.xiaomi.misettings",
+                "com.android.settings:remote",
+                "com.miui.voicetrigger",
+                "com.qti.diagservices",
+                "com.modemdebug",
+                "org.mipay.andriod.manager",
+                "com.xiaomi.devauth",
+                "com.xiaomi.mtb",
+                "android.ext.services",
+                "com.miui.core"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+# missi_pad_global-user 13 TKQ1.221114.001 V14.0.11.0.TMZMIXM release-keys
+- manufacturer: xiaomi
+- platform: kona
+- codename: pipa
+- flavor: missi_pad_global-user
+- release: 13
+- id: TKQ1.221114.001
+- incremental: V14.0.11.0.TMZMIXM
+- tags: release-keys
+- fingerprint: Xiaomi/pipa_global/pipa:13/RKQ1.211001.001/V14.0.11.0.TMZMIXM:user/release-keys
+- is_ab: true
+- brand: Xiaomi
+- branch: missi_pad_global-user-13-TKQ1.221114.001-V14.0.11.0.TMZMIXM-release-keys
+- repo: xiaomi_pipa_dump

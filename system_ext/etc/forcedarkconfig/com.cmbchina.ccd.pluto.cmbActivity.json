@@ -1,0 +1,66 @@
+{
+  "packageName": "com.cmbchina.ccd.pluto.cmbActivity",
+  "forceDark": true,
+  "mainRule": 16,
+  "secondaryRule": 0,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.cmbchina.ccd.widget.textview.CMBTextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "androidx.cardview.widget.CardView",
+              "parent": 2,
+              "index": -1,
+              "id": "view_card_internal"
+            }
+          ]
+        },
+        {
+          "viewName": "com.cmbchina.ccd.widget.textview.CMBTextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "androidx.cardview.widget.CardView",
+              "parent": 5,
+              "index": -1,
+              "id": "view_card_internal"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "id": "tab_bar_bg"
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "usage": 105,
+          "id": "iv_immersion_bg"
+        }
+      ]
+    }
+  ],
+  "forceDarkViewGlobalConfigList": [
+    {
+      "viewName": "com.cmbchina.ccd.pluto.cmbactivity.cmbsearch.widgets.CMBSearchRoundView",
+      "forceDark": true,
+      "usage": 105,
+      "conditions": [
+        {
+          "viewName": "android.widget.FrameLayout",
+          "parent": 1,
+          "index": -1,
+          "id": "cmbsearch_fl_hot_rank_group"
+        }
+      ]
+    }
+  ]
+}

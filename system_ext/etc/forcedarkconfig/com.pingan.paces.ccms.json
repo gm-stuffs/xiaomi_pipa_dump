@@ -1,0 +1,119 @@
+{
+  "packageName": "com.pingan.paces.ccms",
+  "forceDark": true,
+  "mainRule": 1024,
+  "secondaryRule": 0,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.pingan.launcher.activity.LauncherActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "RelativeLayout",
+          "forceDark": false,
+          "id": "rl_left",
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "RecyclerView",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "RelativeLayout",
+          "forceDark": false,
+          "id": "rl_right",
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "RecyclerView",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "RelativeLayout",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "ADCenterBKView",
+              "parent": 0,
+              "index": -1,
+              "id": "rym_bk_center_list"
+            }
+          ]
+        },
+        {
+          "viewName": "LauncherWebView",
+          "id": "home_web",
+          "forceDark": false,
+          "blackMask": true,
+          "conditions": [
+            {
+              "viewName": "SmartRefreshLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "sv_home"
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "FrameLayout",
+              "parent": 1,
+              "index": -1,
+              "id": "home_version_five_header"
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "FrameLayout",
+              "parent": 2,
+              "index": -1,
+              "id": "home_version_five_header"
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "base_header_view_rigth_im2"
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "FrameLayout",
+              "parent": 1,
+              "index": -1,
+              "id": "header_container"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

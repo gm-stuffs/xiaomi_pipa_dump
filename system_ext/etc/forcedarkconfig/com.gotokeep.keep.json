@@ -1,0 +1,37 @@
+{
+  "packageName": "com.gotokeep.keep",
+  "forceDark": true,
+  "mainRule": 1152,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.gotokeep.keep.refactor.business.main.activity.MainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.gotokeep.keep.mo.business.store.ui.ImageViewGradient",
+          "id": "immersiveGradientImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.coordinatorlayout.widget.CoordinatorLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "forceDarkViewGlobalConfigList": []
+}
