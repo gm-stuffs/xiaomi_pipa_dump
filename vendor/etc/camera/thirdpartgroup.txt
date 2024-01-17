@@ -1,0 +1,58 @@
+#group for skip flush, while rotating
+SkipFlushWhileRotating
+{
+    com.sf.activity
+    {
+        times:300
+    }
+    com.sdiread.kt.ktandroid
+    {
+        times:300
+    }
+    com.tencent.mtt
+    {
+        times:500
+    }
+    com.zhihu.android
+    {
+        times:500
+    }
+    com.lemon.lv
+    {
+        times:500
+    }
+}
+
+#group for skip flush, while flash state is not changed
+SkipFlushforFlash
+{
+    com.fenbi.android.zhaojiao
+}
+
+#group for face center
+UseFaceCenter
+{
+    com.tencent.mm
+    com.tencent.mobileqq
+    com.alibaba.android.rimet
+    com.ss.android.lark
+    com.tencent.wework
+    com.tencent.wemeet.app
+    com.ss.android.lark.kami
+    com.whatsapp
+    com.facebook.orca
+    us.zoom.videomeetings
+    com.microsoft.teams
+    com.google.android.apps.meetings
+    com.google.android.apps.tachyon
+    com.whatsapp.w4b
+}
+
+#group for don't has snapshot stream request
+WithoutSnapshotStream
+{
+    com.taobao.taobao
+    com.tencent.mm
+    com.eg.android.AlipayGphone
+    com.whatsapp
+}
