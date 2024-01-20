@@ -1,0 +1,14 @@
+# missi_pad_cn-user 14 UKQ1.230917.001 V816.0.2.0.UMZCNXM release-keys
+- manufacturer: xiaomi
+- platform: kona
+- codename: pipa
+- flavor: missi_pad_cn-user
+- release: 14
+- id: UKQ1.230917.001
+- incremental: V816.0.2.0.UMZCNXM
+- tags: release-keys
+- fingerprint: Xiaomi/pipa/pipa:13/RKQ1.211001.001/V816.0.2.0.UMZCNXM:user/release-keys
+- is_ab: true
+- brand: Xiaomi
+- branch: missi_pad_cn-user-14-UKQ1.230917.001-V816.0.2.0.UMZCNXM-release-keys
+- repo: xiaomi_pipa_dump

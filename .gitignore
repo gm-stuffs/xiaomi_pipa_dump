@@ -1,0 +1,14 @@
+\sy\stem_ext/apex/com.android.vndk.v30.apex
+\sy\stem_ext/priv-app/Setting\s/Setting\s.apk
+modem.img
+boot.img
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk
+product/app/VoiceA\s\si\stAndroidT/VoiceA\s\si\stAndroidT.apk
+product/data-app/MIMediaEditor/MIMediaEditor.apk
+product/data-app/MIUIMu\sicPAD/MIUIMu\sicPAD.apk
+product/data-app/SmartHome/SmartHome.apk
+product/data-app/MiShop/MiShop.apk
+product/priv-app/MIUIBrow\serPad/MIUIBrow\serPad.apk
+product/priv-app/MiuiCamera/MiuiCamera.apk
+product/priv-app/Gm\sCore/Gm\sCore.apk
+product/priv-app/MiuiExtraPhoto/MiuiExtraPhoto.apk
