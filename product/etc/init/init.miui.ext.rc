@@ -1,0 +1,6 @@
+# MIUI ADD:Build_MIUIBuildFrame
+#factory_id
+on property:ro.vendor.ril.oem.factory_id=*
+    setprop ro.ril.factory_id ${ro.vendor.ril.oem.factory_id}
+
+# END Build_MIUIBuildFrame
