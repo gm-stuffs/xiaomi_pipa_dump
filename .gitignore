@@ -1,0 +1,16 @@
+modem.img
+product/priv-app/Velvet/Velvet.apk
+product/priv-app/MiuiCamera/MiuiCamera.apk
+product/priv-app/ExtraPhotoGlobal/ExtraPhotoGlobal.apk
+product/priv-app/GmsCore/GmsCore.apk
+product/data-app/MIMediaEditorGlobal/MIMediaEditorGlobal.apk
+product/app/Gmail2/Gmail2.apk
+product/app/Photos/Photos.apk
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk
+system_ext/priv-app/Settings/Settings.apk
+system_ext/apex/com.android.vndk.v30.apex
+mi_ext/product/priv-app/MIBrowserGlobal_builtin_before_2021/MIBrowserGlobal_builtin_before_2021.apk
+mi_ext/product/priv-app/Messages_arm64_xxhdpi/Messages_arm64_xxhdpi.apk
+mi_ext/product/data-app/SmartHome/SmartHome.apk
+mi_ext/product/app/MIUIVideoPlayer/MIUIVideoPlayer.apk
+boot.img

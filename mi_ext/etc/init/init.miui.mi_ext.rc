@@ -1,0 +1,5 @@
+on boot
+    mount overlay overlay product/usr lowerdir=/mnt/vendor/mi_ext/product/usr:/product/usr
+    mount overlay overlay product/etc/precust_theme lowerdir=/mnt/vendor/mi_ext/product/etc/precust_theme:product/etc/precust_theme
+    mount overlay overlay system_ext/app lowerdir=/mnt/vendor/mi_ext/system_ext/app:system_ext/app
+    mount overlay overlay system_ext/priv-app lowerdir=/mnt/vendor/mi_ext/system_ext/priv-app:system_ext/priv-app
