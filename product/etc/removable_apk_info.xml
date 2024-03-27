@@ -1,0 +1,21 @@
+<string-array name="removable_apk_list">
+    <item>com.android.soundrecorder</item>
+    <item>com.miui.calculator</item>
+    <item>com.miui.creation</item>
+    <item>com.miui.mediaeditor</item>
+    <item>com.miui.notes</item>
+    <item>com.miui.screenrecorder</item>
+    <item>com.miui.weather2</item>
+    <item>com.xiaomi.scanner</item>
+</string-array>
+
+<string-array name="removable_apk_path_list">
+    <item>/product/data-app/MIUISoundRecorderTargetSdk30Global/MIUISoundRecorderTargetSdk30Global.apk</item>
+    <item>/product/data-app/MIUICalculatorGlobalPad/MIUICalculatorGlobalPad.apk</item>
+    <item>/product/data-app/Creation/Creation.apk</item>
+    <item>/product/data-app/MIMediaEditorGlobal/MIMediaEditorGlobal.apk</item>
+    <item>/product/data-app/MIUINotes/MIUINotes.apk</item>
+    <item>/product/data-app/MIUIScreenRecorderLiteGlobal/MIUIScreenRecorderLiteGlobal.apk</item>
+    <item>/product/data-app/MIUIWeatherGlobal/MIUIWeatherGlobal.apk</item>
+    <item>/product/data-app/MiuiScanner/MiuiScanner.apk</item>
+</string-array>
