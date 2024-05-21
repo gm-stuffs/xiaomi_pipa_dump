@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<altek_tuning_params>
+    <!-- wide 64 i -->
+    <sensor name="ov13b10">
+        <sensorId>0</sensorId>
+        <vendorId>7</vendorId>
+        <tuningBin>/vendor/etc/camera/CFR_para_W_V01.bin</tuningBin>
+    </sensor>
+</altek_tuning_params>
