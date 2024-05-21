@@ -1,0 +1,7 @@
+<display-settings>
+    <config identifier="0" />
+    <!-- Allow rotation of fixed-orientation activities. -->
+    <display
+        name="Built-in Screen"
+        ignoreOrientationRequest="true"/>
+</display-settings>
