@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contents>
+    <designated-package name="com.tencent.tmgp.pubgmhd" />
+    <designated-package name="com.tencent.tmgp.sgame" />
+    <designated-package name="com.miHoYo.Yuanshen" />
+    <designated-package name="com.miHoYo.ys.mi" />
+    <designated-package name="com.miHoYo.ys.bilibili" />
+    <designated-package name="com.tencent.lolm" />
+    <designated-package name="com.tencent.jkchess" />
+</contents>
