@@ -1,0 +1,11 @@
+{
+    "heap": [{
+        "name": "com.ss.android.ugc.aweme",
+        "miui": 380,
+        "lite": 380
+    },{
+        "name": "com.ss.android.ugc.aweme.lite",
+        "miui": 380,
+        "lite": 380
+    }]
+}
