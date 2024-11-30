@@ -1,0 +1,395 @@
+{
+  "packageName": "com.tencent.gamehelper.smoba",
+  "forceDark": true,
+  "mainRule": 128,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.tencent.gamehelper.ui.main.MainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "CampHippyCoordinatorHeaderView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "SkinFrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "CampHippyAppBarLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "WrapPagerExIndicator",
+          "forceDark": true,
+          "usage": 1
+        },
+        {
+          "viewName": "LinearLayout",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "ArcRecyclerView",
+              "parent": 0,
+              "index": -1,
+              "id": "func_button_recyclerView"
+            }
+          ]
+        },
+        {
+          "viewName": "SkinImageView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "func_button_img"
+        },
+        {
+          "viewName": "SkinImageView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "icon",
+          "conditions": [
+            {
+              "viewName": "RecyclerView",
+              "parent": 1,
+              "index": -1,
+              "id": "button_list"
+            }
+          ]
+        },
+        {
+          "viewName": "CampBlurImageView",
+          "forceDark": true,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "HippyHorizontalScrollView",
+              "parent": 2,
+              "index": -1
+            },
+            {
+              "viewName": "HippyListItemView",
+              "parent": 4,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "CampBlurImageView",
+          "forceDark": true,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "HippyListItemView",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "RecyclerViewItem",
+              "parent": 2,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.tencent.mtt.hippy.views.text.HippyTextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.tencent.mtt.hippy.views.view.HippyViewGroup",
+              "index": -1
+            },
+            {
+              "parent": 5,
+              "viewName": "com.tencent.mtt.hippy.views.viewpager.HippyViewPagerItem",
+              "index": -1
+            },
+            {
+              "parent": 6,
+              "viewName": "com.tencent.dynamic.view.pager.hippy.CampHippyViewPager",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.tencent.mtt.hippy.views.text.HippyTextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.tencent.mtt.hippy.views.view.HippyViewGroup",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.tencent.mtt.hippy.views.scroll.HippyHorizontalScrollView",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "com.tencent.mtt.hippy.views.list.HippyListItemView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.tencent.hippy.view.blur.CampBlurImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.tencent.mtt.hippy.views.view.HippyViewGroup",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.tencent.mtt.hippy.views.list.HippyListItemView",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "com.tencent.mtt.supportui.views.recyclerview.RecyclerViewItem",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.tencent.hippy.view.blur.CampBlurImageView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.tencent.mtt.hippy.views.view.HippyViewGroup",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "com.tencent.mtt.hippy.views.modal.HippyModalHostView",
+              "index": -1
+            },
+            {
+              "parent": 4,
+              "viewName": "com.tencent.mtt.hippy.views.modal.HippyModalHostView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.tencent.gamehelper.widget.SkinTextView",
+          "id": "sub_title",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1,
+              "id": "new_top_button_add_friend"
+            },
+            {
+              "parent": 1,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1,
+              "id": "top_buttons_layout"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.google.android.material.appbar.AppBarLayout",
+              "index": -1,
+              "id": "top_info"
+            }
+          ]
+        },
+        {
+          "viewName": "com.tencent.gamehelper.widget.SkinTextView",
+          "id": "title",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.tencent.gamehelper.widget.SkinImageView",
+          "id": "info_background",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105
+        },
+        {
+          "viewName": "com.tencent.mtt.hippy.views.view.HippyViewGroup",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.tencent.mtt.hippy.views.view.HippyViewGroup",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.tencent.hippy.view.page.CampPageView",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "com.tencent.mtt.hippy.HippyRootView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.tencent.mtt.hippy.views.view.HippyViewGroup",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.tencent.mtt.hippy.views.view.HippyViewGroup",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.tencent.mtt.hippy.views.list.HippyListItemView",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.tencent.mtt.supportui.views.recyclerview.RecyclerViewItem",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.tencent.gamehelper.ui.setting.SetActivityFlutter",
+      "forceDark": false,
+      "blackMask": true
+    },
+    {
+      "activityName": "com.tencent.gamehelper.community.ImageBrowserActivity",
+      "forceDark": false
+    },
+    {
+      "activityName": "com.tencent.dynamic.CampHippyActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "CampBlurImageView",
+          "forceDark": true,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "HippyRootView",
+              "parent": 2,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "CampBlurImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "HippyViewGroup",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "CampPageView",
+              "parent": 3,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "CampBlurImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "HippyVerticalScrollView",
+              "parent": 2,
+              "index": -1
+            },
+            {
+              "viewName": "CampPageView",
+              "parent": 4,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.tencent.hippy.ext.CampHippyActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.tencent.mtt.hippy.views.text.HippyTextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.tencent.mtt.hippy.views.view.HippyViewGroup",
+              "index": -1
+            },
+            {
+              "parent": 5,
+              "viewName": "com.tencent.dynamic.view.coordinator.header.CampHippyCoordinatorHeaderView",
+              "index": -1
+            },
+            {
+              "parent": 6,
+              "viewName": "com.tencent.gamehelper.helper.SkinFrameLayout",
+              "index": -1,
+              "id": "header_layer"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "forceDarkViewGlobalConfigList": [
+    {
+      "viewName": "SkinImageView",
+      "forceDark": true,
+      "id": "back_img"
+    },
+    {
+      "viewName": "SkinImageView",
+      "forceDark": true,
+      "id": "back"
+    },
+    {
+      "viewName": "SkinImageView",
+      "forceDark": false
+    },
+    {
+      "viewName": "smtt.sdk.WebView",
+      "forceDark": false,
+      "blackMask": true
+    }
+  ]
+}
