@@ -1,0 +1,68 @@
+[
+{
+    "parsedFileInfo":{
+        "rootFile":"/mnt/vendor/persist/sensors/registry/registry/bmi3x0_0_platform.accel.fac_cal.bias",
+        "verDepth":1,
+        "rootObject":"bmi3x0_0_platform.accel.fac_cal.bias",
+        "items":["x"]
+    },
+    "originalFileInfo":{
+        "rootFile":"/vendor/etc/sensors/config/sm8250_bmi3x0_0.json",
+        "verDepth":4,
+        "rootObject":"bmi3x0_0_platform",
+        "subRootObject1":".accel",
+        "subRootObject2":".fac_cal",
+        "subRootObject3":".bias",
+        "items":["x"]
+    }
+},
+{
+    "parsedFileInfo":{
+        "rootFile":"/mnt/vendor/persist/sensors/registry/registry/bmi3x0_0_platform.gyro.fac_cal.bias",
+        "verDepth":1,
+        "rootObject":"bmi3x0_0_platform.gyro.fac_cal.bias",
+        "items":["x"]
+    },
+    "originalFileInfo":{
+        "rootFile":"/vendor/etc/sensors/config/sm8250_bmi3x0_0.json",
+        "verDepth":4,
+        "rootObject":"bmi3x0_0_platform",
+        "subRootObject1":".gyro",
+        "subRootObject2":".fac_cal",
+        "subRootObject3":".bias",
+        "items":["x"]
+    }
+},
+{
+    "parsedFileInfo":{
+        "rootFile":"/mnt/vendor/persist/sensors/registry/registry/tsl2522_0_platform.als.fac_cal",
+        "verDepth":1,
+        "rootObject":"tsl2522_0_platform.als.fac_cal",
+        "items":["scale"]
+    },
+    "originalFileInfo":{
+        "rootFile":"/vendor/etc/sensors/config/sm8250_tsl2522_0.json",
+        "verDepth":3,
+        "rootObject":"tsl2522_0_platform",
+        "subRootObject1":".als",
+        "subRootObject2":".fac_cal",
+        "items":["scale"]
+    }
+},
+{
+    "parsedFileInfo":{
+        "rootFile":"/mnt/vendor/persist/sensors/registry/registry/tcs3701_platform.channel.fac_cal",
+        "verDepth":1,
+        "rootObject":"tcs3701_platform.channel.fac_cal",
+        "items":["data_cch"]
+    },
+    "originalFileInfo":{
+        "rootFile":"/vendor/etc/sensors/config/sm8250_tcs3701.json",
+        "verDepth":3,
+        "rootObject":"tcs3701_platform",
+        "subRootObject1":".channel",
+        "subRootObject2":".fac_cal",
+        "items":["data_cch"]
+    }
+}
+]
