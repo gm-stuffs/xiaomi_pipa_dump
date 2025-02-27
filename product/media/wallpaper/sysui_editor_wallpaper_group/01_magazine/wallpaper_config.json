@@ -1,0 +1,32 @@
+{
+    "title": "影像杂志",
+    "cardType": 1,
+    "count": 5,
+    "slideCount": 5,
+    "randomOrder": false,
+    "wallpapers": [{
+        "thumbPath": "./magazine01.jpg",
+        "originPath": "./magazine01.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./magazine02.jpg",
+        "originPath": "./magazine02.jpg",
+		"maskPath": "./magazine02_mask.jpg",
+		"mattingMode": 2,
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./magazine03.jpg",
+        "originPath": "./magazine03.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./magazine04.jpg",
+        "originPath": "./magazine04.jpg",
+        "maskPath": "./magazine04_mask.jpg",
+		"mattingMode": 2,
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./magazine05.jpg",
+        "originPath": "./magazine05.jpg",
+        "type": "wallpaper"
+    }]
+}

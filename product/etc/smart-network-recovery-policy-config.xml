@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SmartNetworkRecoveryPolicyConfig>
+    <RecoveryPolicyGroup>
+        <isSwitchOn>1</isSwitchOn>
+        <aPCauseSet>4096</aPCauseSet>
+        <bPCauseSet>1</bPCauseSet>
+        <aPStatusLevel>-1</aPStatusLevel>
+        <bPStatusLevel>-1</bPStatusLevel>
+        <RecoveryPolicy>
+            <isSwitchOn>1</isSwitchOn>
+            <policy>1</policy><!-- 1-SNS, 2-DSA,3-ESA, 4-reattach -->
+            <retryTimes>1</retryTimes>
+        </RecoveryPolicy>
+        <RecoveryPolicy>
+            <isSwitchOn>1</isSwitchOn>
+            <policy>2</policy><!-- 1-SNS, 2-DSA,3-ESA, 4-reattach -->
+            <retryTimes>1</retryTimes>
+        </RecoveryPolicy>
+    </RecoveryPolicyGroup>
+
+    <RecoveryPolicyGroup>
+        <isSwitchOn>1</isSwitchOn>
+        <aPCauseSet>4096</aPCauseSet>
+        <bPCauseSet>2</bPCauseSet>
+        <aPStatusLevel>-1</aPStatusLevel>
+        <bPStatusLevel>-1</bPStatusLevel>
+        <RecoveryPolicy>
+            <isSwitchOn>1</isSwitchOn>
+            <policy>1</policy><!-- 1-SNS, 2-DSA,3-ESA, 4-reattach -->
+            <retryTimes>1</retryTimes>
+        </RecoveryPolicy>
+        <RecoveryPolicy>
+            <isSwitchOn>1</isSwitchOn>
+            <policy>2</policy><!-- 1-SNS, 2-DSA,3-ESA, 4-reattach -->
+            <retryTimes>1</retryTimes>
+        </RecoveryPolicy>
+    </RecoveryPolicyGroup>
+
+    <RecoveryPolicyGroup>
+        <isSwitchOn>1</isSwitchOn>
+        <aPCauseSet>4096</aPCauseSet>
+        <bPCauseSet>4</bPCauseSet>
+        <aPStatusLevel>-1</aPStatusLevel>
+        <bPStatusLevel>-1</bPStatusLevel>
+        <RecoveryPolicy>
+            <isSwitchOn>1</isSwitchOn>
+            <policy>1</policy><!-- 1-SNS, 2-DSA,3-ESA, 4-reattach -->
+            <retryTimes>1</retryTimes>
+        </RecoveryPolicy>
+        <RecoveryPolicy>
+            <isSwitchOn>1</isSwitchOn>
+            <policy>2</policy><!-- 1-SNS, 2-DSA,3-ESA, 4-reattach -->
+            <retryTimes>1</retryTimes>
+        </RecoveryPolicy>
+    </RecoveryPolicyGroup>
+
+    <RecoveryPolicyGroup>
+        <isSwitchOn>1</isSwitchOn>
+        <aPCauseSet>4096</aPCauseSet>
+        <bPCauseSet>8</bPCauseSet>
+        <aPStatusLevel>-1</aPStatusLevel>
+        <bPStatusLevel>-1</bPStatusLevel>
+        <RecoveryPolicy>
+            <isSwitchOn>1</isSwitchOn>
+            <policy>1</policy><!-- 1-SNS, 2-DSA,3-ESA, 4-reattach -->
+            <retryTimes>1</retryTimes>
+        </RecoveryPolicy>
+        <RecoveryPolicy>
+            <isSwitchOn>1</isSwitchOn>
+            <policy>2</policy><!-- 1-SNS, 2-DSA,3-ESA, 4-reattach -->
+            <retryTimes>1</retryTimes>
+        </RecoveryPolicy>
+    </RecoveryPolicyGroup>
+
+    <RecoveryPolicyGroup>
+        <isSwitchOn>1</isSwitchOn>
+        <aPCauseSet>4096</aPCauseSet>
+        <bPCauseSet>-1</bPCauseSet>
+        <aPStatusLevel>-1</aPStatusLevel>
+        <bPStatusLevel>-1</bPStatusLevel>
+        <RecoveryPolicy>
+            <isSwitchOn>1</isSwitchOn>
+            <policy>1</policy><!-- 1-SNS, 2-DSA,3-ESA, 4-reattach -->
+            <retryTimes>1</retryTimes>
+        </RecoveryPolicy>
+        <RecoveryPolicy>
+            <isSwitchOn>1</isSwitchOn>
+            <policy>1</policy><!-- 1-SNS, 2-DSA,3-ESA, 4-reattach -->
+            <retryTimes>1</retryTimes>
+        </RecoveryPolicy>
+    </RecoveryPolicyGroup>
+</SmartNetworkRecoveryPolicyConfig>

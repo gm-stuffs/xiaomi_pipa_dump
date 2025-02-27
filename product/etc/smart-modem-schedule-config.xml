@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SmartModemScheduleConfig>
+    <typeQoeConfig typeName = "default">
+        <event>0</event>
+        <timer>5</timer>
+        <ModemRule>
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>1</causeVaule>
+            <ul_grant_ratio>95</ul_grant_ratio>
+            <dl_grant_ratio>95</dl_grant_ratio>
+            <ul_speed>-1</ul_speed>
+            <dl_speed>-1</dl_speed>
+        </ModemRule>
+        <ModemRule>
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>2</causeVaule>
+            <ul_bler>30</ul_bler>
+            <dl_bler>30</dl_bler>
+        </ModemRule>
+        <ModemRule>
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>4</causeVaule>
+            <weak_rsrp>-110,-105</weak_rsrp>
+            <weak_snr>0,0</weak_snr>
+        </ModemRule>
+    </typeQoeConfig>
+    <typeQoeConfig typeName = "shortVideo">
+        <event>15</event>
+        <timer>5</timer>
+        <ModemRule>
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>1</causeVaule>
+            <ul_grant_ratio>95</ul_grant_ratio>
+            <dl_grant_ratio>95</dl_grant_ratio>
+            <ul_speed>50000</ul_speed>
+            <dl_speed>50000</dl_speed>
+        </ModemRule>
+        <ModemRule>
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>2</causeVaule>
+            <ul_bler>30</ul_bler>
+            <dl_bler>30</dl_bler>
+        </ModemRule>
+        <ModemRule>
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>4</causeVaule>
+            <weak_rsrp>-110,-105</weak_rsrp>
+            <weak_snr>0,0</weak_snr>
+        </ModemRule>
+    </typeQoeConfig>
+        <typeQoeConfig typeName = "living">
+        <event>15</event>
+        <timer>5</timer>
+        <ModemRule>
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>1</causeVaule>
+            <ul_grant_ratio>95</ul_grant_ratio>
+            <dl_grant_ratio>95</dl_grant_ratio>
+            <ul_speed>50000</ul_speed>
+            <dl_speed>50000</dl_speed>
+        </ModemRule>
+        <ModemRule>
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>2</causeVaule>
+            <ul_bler>30</ul_bler>
+            <dl_bler>30</dl_bler>
+        </ModemRule>
+        <ModemRule>
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>4</causeVaule>
+            <weak_rsrp>-110,-105</weak_rsrp>
+            <weak_snr>0,0</weak_snr>
+        </ModemRule>
+    </typeQoeConfig>
+</SmartModemScheduleConfig>
