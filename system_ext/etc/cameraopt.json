@@ -1,0 +1,495 @@
+{
+    "version": "1.0",
+    "CameraBooster": {
+        "support": {
+                "cam_boost_enable": true,
+                "3rdcam_boost_enable": true,
+                "cam_boost_opt_enable": true,
+                "cam_boost_forcestop_enable": false,
+                "mms_camcpt_enable": true,
+                "inhibit_procs_enable": true,
+                "3rdcam_inhibit_enable": true,
+                "lmkd_cammode_enable": true,
+                "oom_update_support": true,
+                "cam_reclaim_enable": true,
+                "adj_swap_support": false,
+                "trim_memory_support": true,
+                "cam_boost_early_enable": true,
+                "cam_boost_early_boost_perf": true,
+                "perceptible_support": true,
+                "lmkd_perceptible_support": true,
+                "dynamic_task_proctect_support": true,
+                "thread_inhibit_support": true,
+                "inhibit_dynamic_enable": true,
+                "inhibit_tokill_cgroup_support": true,
+                "light_white_support": true,
+                "hprof_dump_enable": false,
+                "mem_limit_enable": true,
+                "cpuctrl_params_support": true,
+                "volume_keydown_kill_support":false
+            },
+        "oom": {
+                "oom_level": "51200:0,89600:100,128000:200,179200:251,262144:701,393216:800",
+                "psi_level": "28,20,13,8",
+                "adj_level": "251,200,100,100,50"
+            },
+        "threshold": {
+                "skip_task": 4,
+                "skip_task_lower": 1,
+                "adj_threshold": 800,
+                "lowAdj_threshold": 0,
+                "lowerAdj_freeMem_threshold": 614400,
+                "cam_boost_threshold": 2936012,
+                "cam_boost_ext_mem": 0,
+                "cam_record_reclaim": 2097152,
+                "cam_boost_reclaim": 1297152,
+                "update_state_delay_ms": 6000,
+                "intercept_restart_time": 3000,
+                "kill_lowprio_sysapp_threshlod": 10240,
+                "kill_highprio_sysapp_threshlod": 30720,
+                "kill_tag": 63,
+                "protect_locktask_num": 2,
+                "3rdcam_boost_threshold": 2097152,
+                "3rd_skip_task_lower": 3,
+                "3rd_lowAdj_threshold": 50,
+                "3rd_kill_tag": 63,
+                "dynamic_interval": 3000,
+                "3rd_limit_threshold": 512000,
+                "free_memory_threshold": 1500000,
+                "free_memory_adj_threshold": 251,
+                "litekill_adj_threshold": 900,
+                "litekill_free_memory_threshold": 800000,
+                "restore_inhibit_delay_time": 2000,
+                "inhibit_gallery_scene_delayms": 3000,
+                "restart_kill_duration": 6000
+            },
+        "mem_compact_threshold": {
+                "video": 716800,
+                "wide_normal": 716800,
+                "wide_hdr": 716800,
+                "wide_sr": 1024000,
+                "wide_sn": 921600,
+                "wide_burst": 1126400,
+                "wide_hdrsr": 1126400,
+                "wide_fusion": 716800,
+                "wide_sr_fusion": 716800,
+                "wide_vendor_mfnr": 716800,
+                "wide_mihal_mfnr": 716800,
+                "wide_bokeh": 1433600,
+                "wide_bokeh_md": 1331200,
+                "wide_bokeh_hdr": 1536000,
+                "wide_bokeh_se": 1433600,
+                "wide_hd_remosaic": 1024000,
+                "wide_hd_upscale": 716800,
+                "wide_manual": 409600,
+                "wide_ainr": 716800,
+                "wide_hd_ainr": 1536000,
+                "front_normal": 512000,
+                "front_hdr": 645120,
+                "front_sn": 337920,
+                "front_vendor_mfnr": 512000,
+                "front_mihal_mfnr": 512000,
+                "front_bokeh": 819200,
+                "front_bokeh_hdr": 949200,
+                "reclaim_base_threshold": 512000,
+                "reclaim_mid_free_threshold": 358400,
+                "reclaim_mid_free_threshold_video":716800,
+                "reclaim_critical_free_threshold": 81920
+            },
+        "kill_configs": [
+            {
+                "name": "pss_threshold",
+                "config": {
+                    "com.tencent.mm": 1024000,
+                    "com.miui.gallery": 368640,
+                    "com.miui.home": 819200,
+                    "com.miui.personalassistant": 512000,
+                    "com.miui.miwallpaper": 409600,
+                    "com.xiaomi.bluetooth": 153600,
+                    "com.xiaomi.xmsf:services": 20480,
+                    "com.xiaomi.mtb": 15360,
+                    "com.miui.systemAdSolution": 35840,
+                    "com.modemdebug": 10240,
+                    "com.google.process.gservices": 20480,
+                    "com.milink.service": 40960,
+                    "com.miui.mishare.connectivity": 20480,
+                    "com.miui.presale": 25600,
+                    "com.qualcomm.qti.autoregistration": 10240,
+                    "com.android.settings": 204800,
+                    "com.lbe.security.miui": 51200,
+                    "com.miui.aod": 51200,
+                    "com.miui.miwallpaper.geometry:GeometrySuperWallpaper": 563200,
+                    "com.miui.miwallpaper.snowmountain:snowmountainSuperWallpaper": 563200,
+                    "com.miui.miwallpaper.saturn:saturnSuperWallpaper": 563200,
+                    "com.miui.miwallpaper.earth:earthSuperWallpaper": 563200,
+                    "com.miui.miwallpaper.mars:marsSuperWallpaper": 563200,
+                    "com.miui.voiceassist:core": 81920,
+                    "com.miui.securityadd": 102400,
+                    "com.mobiletools.systemhelper": 20480,
+                    "com.android.htmlviewer:remote": 40960,
+                    "com.baidu.carlife.xiaomi": 256000,
+                    "com.milink.crossdeviceservice":102400,
+                    "com.xiaomi.vtcamera":204800
+                }
+            },
+            {
+                "name": "adj_threshold",
+                "config": {
+                    "com.tencent.mm": 250,
+                    "com.miui.screenrecorder": 200,
+                    "com.miui.securitycenter:ui": 250,
+                    "com.miui.securityadd": 250,
+                    "com.milink.service": 250,
+                    "com.miui.mishare.connectivity": 250,
+                    "com.android.incallui": 250,
+                    "com.android.updater": 250,
+                    "com.mi.health:device": 250
+                }
+            }
+        ],
+        "dump_native_configs": {
+                "system_server": 665600,
+                "/system/bin/surfaceflinger": 563200,
+                "/vendor/bin/hw/vendor.qti.hardware.display.composer-service": 307200
+                },
+        "dump_app_configs": {
+                "com.miui.home": 863200,
+                "com.android.systemui": 863200,
+                "com.miui.miwallpaper": 507200
+                },
+        "micompact_configs": {
+                "com.tencent.mm": 819200,
+                "com.miui.gallery": 294912,
+                "com.miui.home": 573440,
+                "com.miui.personalassistant": 409600,
+                "com.miui.miwallpaper": 327680,
+                "com.xiaomi.bluetooth": 122880,
+                "com.miui.miwallpaper.geometry:GeometrySuperWallpaper": 450560,
+                "com.miui.miwallpaper.snowmountain:snowmountainSuperWallpaper": 450560,
+                "com.miui.miwallpaper.saturn:saturnSuperWallpaper": 450560,
+                "com.miui.miwallpaper.earth:earthSuperWallpaper": 450560,
+                "com.miui.miwallpaper.mars:marsSuperWallpaper": 450560,
+                "com.miui.securityadd": 81920,
+                "com.android.systemui": 450560
+        },
+        "cpus_configs": {
+            "limit-level0": "0-1",
+            "limit-level1": "0-2",
+            "limit-level2": "0-3",
+            "limit-level3": "0-4"
+        },
+        "configs": [
+            {
+                "name": "protect_list",
+                "config": [
+                    "com.tencent.mobileqq",
+                    "com.ss.android.lark.kami"
+                ]
+            },
+            {
+                "name": "perceptible_list",
+                "config": [
+                    "com.tencent.mm",
+                    "com.miui.gallery",
+                    "com.miui.personalassistant",
+                    "com.xiaomi.bluetooth",
+                    "com.miui.securitycenter:ui",
+                    "com.miui.systemAdSolution",
+                    "com.google.process.gservices",
+                    "com.milink.service",
+                    "com.miui.mishare.connectivity",
+                    "com.miui.presale",
+                    "com.android.settings",
+                    "com.android.updater",
+                    "com.milink.service:core",
+                    "com.miui.securityadd",
+                    "com.mobiletools.systemhelper",
+                    "com.android.htmlviewer:remote",
+                    "com.milink.crossdeviceservice",
+                    "com.xiaomi.vtcamera"
+                ]
+            },
+            {
+                "name": "white_list",
+                "config": [
+                    "com.android.camera",
+                    "android.process.media",
+                    "com.android.traceur",
+                    "com.miui.home",
+                    "com.miui.screenrecorder",
+                    "com.tencent.mm:push",
+                    "com.tencent.mobileqq:MSF",
+                    "com.ss.android.lark.kami:wschannel",
+                    "org.telegram.messenger",
+                    "org.thunderdog.challegram",
+                    "com.facebook.orca",
+                    "com.facebook.katana",
+                    "jp.naver.line.android",
+                    "com.phonetest.application:CameraMemoryWatcher",
+                    "com.phonetest.application",
+                    "android.camera.cts",
+                    "android.camera.cts:errorLoggingServiceProcess",
+                    "com.android.cts.verifier",
+                    "com.miui.avpressuretest",
+                    "com.android.mms:mms_service",
+                    "com.xiaomi.xmsf:services",
+                    "com.xiaomi.mtb",
+                    "com.modemdebug",
+                    "com.qualcomm.qti.autoregistration",
+                    "com.lbe.security.miui",
+                    "com.miui.aod",
+                    "com.android.incallui",
+                    "com.miui.voiceassist:core",
+                    "com.mi.health:device",
+                    "com.miui.tsmclient",
+                    "com.baidu.carlife.xiaomi"
+                ]
+            },
+            {
+                "name": "black_list",
+                "config": [
+                    "com.miui.newhome:launcher",
+                    "com.xiaomi.smarthome:plugin0",
+                    "com.xiaomi.smarthome",
+                    "com.android.quicksearchbox"
+                ]
+            },
+            {
+                "name": "inhibit_app_list",
+                "config": [
+                    "com.google.android.providers.media.module",
+                    "com.sohu.inputmethod.sogou.xiaomi"
+                ]
+            },
+            {
+                "name": "inhibit_sysapp_list",
+                "config": [
+                    "com.lbe.security.miui",
+                    "com.mi.health",
+                    "com.milink.service",
+                    "com.miui.analytics",
+                    "com.miui.daemon",
+                    "com.miui.mishare.connectivity",
+                    "com.miui.securitycenter",
+                    "com.miui.voiceassist",
+                    "com.qualcomm.qti.workloadclassifier",
+                    "com.xiaomi.bluetooth"
+                ]
+            },
+            {
+                "name": "inhibit_native_list",
+                "config": [
+                    "com.google.android.gms.persistent",
+                    "/system/bin/logd",
+                    "/vendor/bin/diag-router",
+                    "/system/vendor/bin/cnss_diag",
+                    "/apex/com.android.art/bin/dex2oat64",
+                    "/odm/bin/mrmd",
+                    "/system_ext/bin/tango_pretranslator"
+                ]
+            },
+            {
+                "name": "dynamic_protect_list",
+                "config": [
+                        "com.tencent.mm",
+                        "com.tencent.mobileqq"
+                ]
+            },
+        {
+                "name": "intercept_restart_list",
+                "config": [
+                    "com.xiaomi.bsp.gps.nps",
+                    "com.android.settings:remote"
+                ]
+            },
+            {
+                "name": "start_black_list",
+                "config": [
+                    "com.mi.android.globalminusscreen:Metrica",
+                    "com.mi.android.globalminusscreen",
+                    "com.xiaomi.mipicks"
+                ]
+            },
+            {
+                "name": "skip_task_list",
+                "config": [
+                    "com.android.camera",
+                    "com.miui.home",
+                    "com.miui.gallery",
+                    "com.mi.android.globallauncher"
+                ]
+            },
+            {
+                "name": "skip_boost_list",
+                "config": [
+                    "com.miui.face",
+                    "com.xiaomi.smarthome"
+                ]
+            }
+        ],
+        "configs_cn": [
+            {
+                "name": "white_list",
+                "config": [
+                    "com.android.camera",
+                    "com.miui.home",
+                    "com.miui.screenrecorder",
+                    "com.tencent.mm:push",
+                    "com.tencent.mobileqq:MSF",
+                    "com.ss.android.lark.kami:wschannel",
+                    "android.process.media",
+                    "com.android.traceur",
+                    "com.phonetest.application:CameraMemoryWatcher",
+                    "android.camera.cts",
+                    "android.camera.cts:errorLoggingServiceProcess",
+                    "com.android.cts.verifier",
+                    "com.miui.avpressuretest",
+                    "com.android.mms:mms_service",
+                    "com.xiaomi.xmsf:services",
+                    "com.xiaomi.mtb",
+                    "com.modemdebug",
+                    "com.qualcomm.qti.autoregistration",
+                    "com.lbe.security.miui",
+                    "com.miui.aod",
+                    "com.android.incallui",
+                    "com.miui.voiceassist:core",
+                    "com.mi.health:device",
+                    "com.miui.tsmclient",
+                    "com.baidu.carlife.xiaomi"
+                ]
+            },
+            {
+                "name": "intercept_restart_list",
+                "config": [
+                    "com.xiaomi.bsp.gps.nps",
+                    "com.android.settings:remote",
+                    "com.google.process.gservices",
+                    "com.google.android.gms",
+                    "com.google.android.gms.persistent",
+                    "com.google.process.gapps",
+                    "com.android.vending",
+                    "com.sohu.inputmethod.sogou.xiaomi",
+                    "com.baidu.input_mi"
+                ]
+            },
+            {
+                "name": "inhibit_app_list",
+                "config": [
+                    "com.google.android.providers.media.module",
+                    "com.sohu.inputmethod.sogou.xiaomi",
+                    "com.google.process.gservices",
+                    "com.google.android.gms",
+                    "com.google.android.gms.persistent",
+                    "com.google.process.gapps",
+                    "com.android.vending"
+                ]
+            }
+        ],
+        "oom_6Gmem": {
+                "oom_level": "18432:0,23040:100,27648:200,85000:250,127500:800,161280:950"
+            },
+        "threshold_6Gmem": {
+                "skip_task": 3,
+                "skip_task_lower": 1,
+                "adj_threshold": 701,
+                "lowAdj_threshold": 0,
+                "lowerAdj_freeMem_threshold": 409600,
+                "cam_boost_threshold": 2097152,
+                "update_state_delay_ms": 5000,
+                "intercept_restart_time": 3000,
+                "3rdcam_boost_threshold": 1572864,
+                "3rd_skip_task_lower": 2,
+                "dynamic_interval": 5000
+            },
+        "threshold_8Gmem": {
+                "recent_task_pss_threshold": 819200,
+                "protect_locktask_num": 1
+        },
+        "threshold_16Gmem": {
+            "cam_boost_threshold": 4500000
+        }
+    },
+
+    "QuickCamera": {
+        "hook_activities": [
+            "com.tencent.mm.plugin.scanner.ui.BaseScanUI",
+            "com.alipay.mobile.scan.as.main.MainCaptureActivity",
+            "com.alipay.mobile.scan.as.tool.ToolsCaptureActivity",
+            "com.ss.android.ugc.aweme.qrcode.view.QRCodeScanActivity",
+            "com.xunmeng.pinduoduo.activity.NewPageActivity",
+            "com.etao.feimagesearch.capture.CaptureActivity",
+            "com.taobao.taobao.scancode.gateway.activity.ScancodeGatewayActivity",
+            "com.zhihu.android.qrscanner.ui.ScannerActivity",
+            "com.tencent.mobileqq.qrscan.activity.ScannerActivity",
+            "com.tencent.mobileqq.olympic.activity.ScanTorchActivity",
+            "com.baidu.searchbox.CodeScannerActivity",
+            "com.yxcorp.plugin.qrcode.api.QRCodeScanActivity",
+            "com.jd.lib.scan.lib.zxing.client.android.CaptureActivity",
+            "com.meituan.android.scan.ScanQRInMeituanActivity",
+            "com.meituan.android.bike.component.feature.qrcode.view.QRCodeScannerByMBarActivity",
+            "me.ele.scan.ui.ScanMainActivity",
+            "com.weibo.international.activity.scan.ScanWebActivity",
+            "com.sina.weibo.qrcode.CaptureActivity",
+            "com.bilibili.app.qrcode.QRcodeCaptureActivity",
+            "com.xingin.matrix.v2.redscanner.scanner.QrCodeScannerActivityV2",
+            "com.tencent.qqlive.qrcode.ui.ScanQRCustomActivity",
+            "com.qiyi.scan.ARWrapperActivity"
+        ]
+    },
+
+    "PerfParams":{
+        "SM8650": {
+            "camera_app_launch_boost":[
+                    "0x40804100, 0xFFF,  //MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0, 0xFFF",
+                    "0x40800100, 0xFFF,  //MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0, 0xFFF",
+                    "0x40804000, 0xFFF,  //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 0xFFF",
+                    "0x40800000, 0xFFF,  //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 0xFFF",
+                    "0x42804000, 0x0,    //GPU - min pwrlevel 0 (freq 940 Mhz)",
+                    "0x43C28000, 4096,   //MPCTLV3_CPUCTL_TOPAPP_CPUSHARE,          4096"
+            ],
+            "display_on_resource": [
+                    "0x40000000, 1,      //Display on resource opcode, value"
+            ],
+            "camera_post_process_boost": [
+                    "0x43C24000, 4096,   //MPCTLV3_CPUCTL_CAMERA_CPUSHARE,          4096"
+            ],
+            "provider_restart_perf_lock_params": [
+                "0x40400000, 1,      //MPCTLV3_ALL_CPUS_PWR_CLPS_DIS, 1",
+                "0x40C00000, 1,      //MPCTLV3_SCHED_BOOST, 1",
+                "0x43C1C100, 2265600,//MPCTLV3_SCHED_FMAX_CAP_LITTLE , 2265600",
+                "0x43C1C000, 3148800,//MPCTLV3_SCHED_FMAX_CAP_BIG , 3148800",
+                "0x43C1C300, 2956800,//MPCTLV3_SCHED_FMAX_CAP_TITANIUM , 2956800",
+                "0x40804100, 2265,   //MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0, 2265",
+                "0x40800100, 2265,   //MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0, 2265",
+                "0x40804000, 3148,   //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 3148",
+                "0x40800000, 3148,   //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 3148",
+                "0x40804200, 3187,   //MPCTLV3_MAX_FREQ_CLUSTER_PLUS_CORE_0, 3187",
+                "0x40800200, 3187,   //MPCTLV3_MIN_FREQ_CLUSTER_PLUS_CORE_0, 3187",
+                "0x40804300, 3148,   //MPCTLV3_MAX_FREQ_CLUSTER_TITANIUM_CORE_0, 3148",
+                "0x40800300, 3148,   //MPCTLV3_MIN_FREQ_CLUSTER_TITANIUM_CORE_0 , 3148",
+                "0x43498000, 4224000,//MPCTLV3_BUS_DCVS_LLCC_DDR_BOOST_FREQ, 4224000",
+                "0x4349C000, 2035200,//MPCTLV3_BUS_DCVS_LLCC_L3_BOOST_FREQ, 2035200",
+                "0x434A0000, 1066000,//MPCTLV3_BUS_DCVS_LLCC_LLCC_BOOST_FREQ, 1066000"
+            ],
+            "set_foreground_app_cpus": [
+                "0x40C40000, 0x7F,   //PERF_LOCK_POWER_HINT_FOREGROUND,          0-6"
+            ]
+        },
+        "SM8635": {
+            "camera_app_launch_boost": [
+                    "0x40804100, 0xFFF,  //MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0, 0xFFF",
+                    "0x40800100, 0xFFF,  //MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0, 0xFFF",
+                    "0x40804000, 0xFFF,  //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 0xFFF",
+                    "0x40800000, 0xFFF,  //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 0xFFF",
+                    "0x42804000, 0x0,    //GPU - min pwrlevel 0 (freq 940 Mhz)",
+                    "0x43C28000, 4096,   //MPCTLV3_CPUCTL_TOPAPP_CPUSHARE,          4096"
+            ],
+            "display_on_resource": [
+                    "0x40000000, 1,      //Display on resource opcode, value"
+            ],
+            "camera_post_process_boost": [
+                    "0x43C24000, 4096,   //MPCTLV3_CPUCTL_CAMERA_CPUSHARE,          4096"
+            ]
+        }
+    }
+}

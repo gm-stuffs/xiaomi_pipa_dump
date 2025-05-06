@@ -1,0 +1,5 @@
+libtflite_interface_wrap.touch.so
+libestimate_interface.touch.so
+libbrushstroke_interface.touch.so
+librecognize_interface.touch.so
+libgesture_interface.touch.so

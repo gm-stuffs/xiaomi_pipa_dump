@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2023 Xiaomi, Inc.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** limitations under the License.
+*/
+-->
+<manifest version="1.0" type="framework">
+   <hal format="aidl" optional="true">
+       <name>xiaomi.system.hypsys.common</name>
+       <interface>
+           <name>IHypSysSsi</name>
+           <instance>default</instance>
+       </interface>
+        <interface>
+           <name>IHypSysSsiIntl</name>
+           <instance>default</instance>
+       </interface>
+   </hal>
+</manifest>

@@ -1,0 +1,3 @@
+libxiaomi_modemdumpsdx55_jni.modem.so
+libxiaomi_modemdump_jni.modem.so
+libmodemsmartengine_jni.modem.so
