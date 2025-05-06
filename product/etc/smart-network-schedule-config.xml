@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SmartNetworkScheduleConfig>
+    <defaultQoeConfig typeName = "default">
+        <NetworkRule> <!-- LinkValid评估 -->
+            <isSwitchOn>0</isSwitchOn>
+            <causeVaule>1</causeVaule>
+            <validLinkTimeRate>40</validLinkTimeRate>
+            <deltaValidLinkTimeRate>20,-1,-1</deltaValidLinkTimeRate>  <!-- delta,pre,cur -->
+        </NetworkRule>
+        <NetworkRule> <!-- socket loss指标 -->
+            <isSwitchOn>0</isSwitchOn>
+            <causeVaule>2</causeVaule>
+            <tcpFwmarkLossRate>15</tcpFwmarkLossRate>
+            <deltaTcpFwmarkLossRate>30,-1,-1</deltaTcpFwmarkLossRate>
+        </NetworkRule>
+        <NetworkRule> <!-- tcp Kernel loss指标（30s） -->
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>4</causeVaule>
+            <tcpKernelLossRate>20</tcpKernelLossRate>
+            <deltaTcpKernelLossRate>15,-1,-1</deltaTcpKernelLossRate>
+        </NetworkRule>
+        <NetworkRule> <!-- dns success指标 -->
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>8</causeVaule>
+            <dnsSuccessRate>60</dnsSuccessRate>
+            <deltaDnsSuccessRate>40,-1,-1</deltaDnsSuccessRate>
+        </NetworkRule>
+        <NetworkRule> <!-- dns rtt指标 -->
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>16</causeVaule>
+            <dnsRttAvg>800</dnsRttAvg>
+            <deltaDnsRttAvg>1000,-1,-1</deltaDnsRttAvg>
+        </NetworkRule>
+        <NetworkRule> <!--Delta LinkValid评估 -->
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>32</causeVaule>
+            <deltaValidLinkTimeRate>-1,70,50</deltaValidLinkTimeRate>
+        </NetworkRule>
+        <NetworkRule> <!--Delta socket loss指标 -->
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>64</causeVaule>
+            <deltaTcpFwmarkLossRate>-1,30,50</deltaTcpFwmarkLossRate>
+        </NetworkRule>
+        <NetworkRule> <!--Delta tcp Kernel loss指标 -->
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>128</causeVaule>
+            <deltaTcpKernelLossRate>-1,20,20</deltaTcpKernelLossRate>
+        </NetworkRule>
+        <NetworkRule> <!--Delta dns success指标 -->
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>256</causeVaule>
+            <deltaDnsSuccessRate>-1,40,40</deltaDnsSuccessRate>
+        </NetworkRule>
+        <NetworkRule> <!--Delta dns rtt指标 -->
+            <isSwitchOn>1</isSwitchOn>
+            <causeVaule>512</causeVaule>
+            <deltaDnsRttAvg>-1,1000,1000</deltaDnsRttAvg>
+        </NetworkRule>
+    </defaultQoeConfig>
+</SmartNetworkScheduleConfig>
