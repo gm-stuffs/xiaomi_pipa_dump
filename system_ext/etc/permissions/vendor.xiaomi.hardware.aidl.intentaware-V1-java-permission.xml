@@ -1,0 +1,4 @@
+<permissions>
+    <library name="vendor.xiaomi.hardware.aidl.intentaware-V1-java"
+            file="/system/system_ext/framework/vendor.xiaomi.hardware.aidl.intentaware-V1-java.jar" />
+</permissions>
