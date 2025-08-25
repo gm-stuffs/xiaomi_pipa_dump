@@ -1,0 +1,16 @@
+
+# 1. system/core/rootdir/init.rc 里面on init阶段 mkdir /mnt/rescue
+# 2. vendor部分 on fs 阶段 mount_all 然后 mount /mnt/rescue
+# 3. 这里必须放到下一个节点, on post-fs 先进行restorecon 然后start mqsasd
+
+# mqsasd
+service hypsys_system /system_ext/bin/hypsys_system
+    user root
+    group system cache log everybody
+    disabled
+    socket mqsasd stream 0660 system system
+    socket mqsasd_pr dgram 0666 system system
+
+# post fs start hypsys system
+on post-fs
+   start hypsys_system

@@ -1,0 +1,3 @@
+on post-fs-data
+    chmod 0666 /dev/cam_msger
+

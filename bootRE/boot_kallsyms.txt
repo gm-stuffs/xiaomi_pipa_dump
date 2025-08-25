@@ -1,0 +1,1 @@
+python3: can't open file '/home/runner/work/dumpyara/dumpyara/vmlinux-to-elf/vmlinux_to_elf/kallsyms_finder.py': [Errno 2] No such file or directory
